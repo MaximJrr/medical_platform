@@ -1,0 +1,21 @@
+[project]
+name = "medical-platform"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "maxim",email = "maximchukavovmc@gmail.com"}
+]
+license = {text = "MIT"}
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "fastapi (>=0.120.0,<0.121.0)",
+    "uvicorn (>=0.38.0,<0.39.0)",
+    "pydantic-settings (>=2.11.0,<3.0.0)",
+    "sqlalchemy[asyncio] (>=2.0.44,<3.0.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
